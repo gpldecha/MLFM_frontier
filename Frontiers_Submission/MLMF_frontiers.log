@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.9)  20 JUL 2016 15:34
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.1)  16 JUL 2016 23:27
+>>>>>>> 76f1ae97eacca618b24b97829af5f4e4b4003834
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**MLMF_frontiers.tex
+**MLMF_frontiers.tex -shell-escape
 (./MLMF_frontiers.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
@@ -1634,6 +1638,7 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1305.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  29106 strings out of 493304
  548476 string characters out of 6139872
  660819 words of memory out of 5000000
@@ -1641,6 +1646,15 @@ Here is how much of TeX's memory you used:
  66764 words of font info for 292 fonts, out of 8000000 for 9000
  961 hyphenation exceptions out of 8191
  56i,25n,60p,10406b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 29114 strings out of 493304
+ 549844 string characters out of 6139871
+ 660335 words of memory out of 5000000
+ 31517 multiletter control sequences out of 15000+600000
+ 66226 words of font info for 295 fonts, out of 8000000 for 9000
+ 961 hyphenation exceptions out of 8191
+ 56i,25n,60p,10420b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 76f1ae97eacca618b24b97829af5f4e4b4003834
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 

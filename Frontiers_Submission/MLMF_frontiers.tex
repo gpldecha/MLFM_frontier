@@ -375,7 +375,7 @@ The probability distribution of the agent's position is given by marginalising t
 The converse holds true for the object's marginal, that is the summation would be over 
 the agents variable. Figure \ref{fig:histogram_joint} (\textit{Top}) illustrates the joint distribution of both the agent and the object random variable. 
 The 1D world of the agent and object is discretised to 10 states, producing a joint distribution with 100 parameters!
-For a state space of $N$ bins, $i=1...N$, and there is a total of $M$ random variables (one agent and $M-1$ objects)
+For a state space of $N$ bins, $s=1...N$, and there is a total of $M$ random variables (one agent and $M-1$ objects)
 and the joint distribution has $N^{M}$ parameters. This exponential increase renders Histogram-SLAM intractable
 with this parameterisation.
 
@@ -463,8 +463,13 @@ parametrised by $\boldsymbol{\theta}^{(ij)}$. Instead we propose a new filter, M
 achieves the same result as the Histogram filter but without having to parameterise the values of the joint distribution, thus avoiding the exponential growth cost. 
 
 The \textbf{key idea} behind the mechanism of the MLMF filter is to evaluate only the joint distribution $P_{\cap}(A_t,O|Y_{0:t},u_{1:t})$ in
+<<<<<<< HEAD
 dependent states and updates directly the marginals without marginalising the entire joint state space.
 The MLMF filter parametrises \textbf{explicitly} the marginals ${P(A_t|Y_{0:t},u_{1:t};\ThA)}$, ${P(O|Y_{0:t},u_{1:t};\ThO)}$. 
+=======
+dependent states and updates directly to the marginals without parameterising the values of the joint distribution.
+The MLMF filter parametrises \textbf{explicitly} the marginals ${P(A_t|Y_{0:t},u_{1:t};\ThA)}$, ${P(O|Y_{0:t};\ThO)}$. 
+>>>>>>> 76f1ae97eacca618b24b97829af5f4e4b4003834
 This contrasts the Histogram filter where the marginals are derived from the joint distribution by marginalisation over the entire joint state space. 
 
 \section{Measurement Likelihood Memory Filter}\label{sec:MLMF}
