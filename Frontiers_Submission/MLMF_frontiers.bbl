@@ -17,14 +17,14 @@
 Arulampalam, M., Maskell, S., Gordon, N., and Clapp, T. (2002).
 \newblock A tutorial on particle filters for online nonlinear/non-gaussian
   bayesian tracking.
-\newblock \emph{Signal Processing, IEEE Transactions on} 50, 174--188.
+\newblock \emph{Transactions on Signal Processing} 50, 174--188.
 \newblock \doi{10.1109/78.978374}
 \bibAnnoteFile{PF_tutorial_2002}
 
 \bibitem[{Bake et~al.(2011)Bake, Tenenbaum, and Saxe}]{Bake_Saxe_Tene_2011}
 Bake, C., Tenenbaum, J., and Saxe, R. (2011).
 \newblock Bayesian theory of mind: Modeling joint belief-desire attribution.
-\newblock \emph{Journal of Cognitive Science}
+\newblock \emph{Journal of Cognitive Science} \doi{doi=10.1.1.365.1528}
 \bibAnnoteFile{Bake_Saxe_Tene_2011}
 
 \bibitem[{Carlone et~al.(2010)Carlone, Du, Ng, Bona, and
@@ -32,32 +32,41 @@ Bake, C., Tenenbaum, J., and Saxe, R. (2011).
 Carlone, L., Du, J., Ng, M., Bona, B., and Indri, M. (2010).
 \newblock An application of kullback-leibler divergence to active slam and
   exploration with particle filters.
-\newblock In \emph{Intelligent Robots and Systems (IROS), 2010 IEEE/RSJ
-  International Conference on}. 287--293.
-\newblock \doi{10.1109/IROS.2010.5652164}
+\newblock In \emph{International Conference on Intelligent Robots and Systems
+  (IROS)}. 287--293.
+\newblock \doi{http://dx.doi.org/10.1109/IROS.2010.5652164}
 \bibAnnoteFile{KL_SLAM_exploration_PF}
 
-\bibitem[{Carrillo et~al.(2012)Carrillo, Reid, and
-  Castellanos}]{Active_SLAM_Uncertainty_compar}
-Carrillo, H., Reid, I., and Castellanos, J. (2012).
+\bibitem[{Carrillo et~al.(2012{\natexlab{a}})Carrillo, Reid, and
+  Castellanos}]{ActivePosSLAM}
+Carrillo, H., Reid, I., and Castellanos, J. (2012{\natexlab{a}}).
 \newblock On the comparison of uncertainty criteria for active slam.
-\newblock In \emph{Robotics and Automation (ICRA), 2012 IEEE International
-  Conference on}. 2080--2087.
-\newblock \doi{10.1109/ICRA.2012.6224890}
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)}.
+  2080--2087.
+\newblock \doi{http://dx.doi.org/10.1109/ICRA.2012.6224890}
+\bibAnnoteFile{ActivePosSLAM}
+
+\bibitem[{Carrillo et~al.(2012{\natexlab{b}})Carrillo, Reid, and
+  Castellanos}]{Active_SLAM_Uncertainty_compar}
+Carrillo, H., Reid, I., and Castellanos, J. (2012{\natexlab{b}}).
+\newblock On the comparison of uncertainty criteria for active slam.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)}.
+  2080--2087.
+\newblock \doi{http://dx.doi.org/10.1109/ICRA.2012.6224890}
 \bibAnnoteFile{Active_SLAM_Uncertainty_compar}
 
 \bibitem[{de~Chambrier and Billard(2013)}]{deChambrier2013}
 de~Chambrier, G. and Billard, A. (2013).
 \newblock Learning search behaviour from humans.
-\newblock In \emph{Robotics and Biomimetics (ROBIO), 2013 IEEE International
-  Conference on}. 573--580.
-\newblock \doi{10.1109/ROBIO.2013.6739521}
+\newblock In \emph{International Conference on Robotics and Biomimetics
+  (ROBIO)}. 573--580.
+\newblock \doi{http://dx.doi.org/10.1109/ROBIO.2013.6739521}
 \bibAnnoteFile{deChambrier2013}
 
 \bibitem[{Durrant-Whyte and Bailey(2006)}]{SLAM_part1}
 Durrant-Whyte, H. and Bailey, T. (2006).
 \newblock Simultaneous localization and mapping: part i.
-\newblock \emph{Robotics Automation Magazine, IEEE} 13, 99--110.
+\newblock \emph{Robotics Automation Magazine} 13, 99--110.
 \newblock \doi{10.1109/MRA.2006.1638022}
 \bibAnnoteFile{SLAM_part1}
 
@@ -65,15 +74,15 @@ Durrant-Whyte, H. and Bailey, T. (2006).
   Latombe(2002)}]{Navigation_strategires_for_exploring_indoor_environments}
 Gonz{\'{a}}lez{-}Ba{\~{n}}os, H.~H. and Latombe, J. (2002).
 \newblock Navigation strategies for exploring indoor environments.
-\newblock \emph{I. J. Robotic Res.} 21, 829--848.
-\newblock \doi{10.1177/0278364902021010834}
+\newblock \emph{Internationl Journal of Robotic Research} 21, 829--848.
+\newblock \doi{http://dx.doi.org/10.1177/0278364902021010834}
 \bibAnnoteFile{Navigation_strategires_for_exploring_indoor_environments}
 
 \bibitem[{Grisetti et~al.(2010)Grisetti, Kummerle, Stachniss, and
   Burgard}]{TutGraphSLAM}
 Grisetti, G., Kummerle, R., Stachniss, C., and Burgard, W. (2010).
 \newblock A tutorial on graph-based slam.
-\newblock \emph{Intelligent Transportation Systems Magazine, IEEE} 2, 31--43.
+\newblock \emph{Intelligent Transportation Systems Magazine} 2, 31--43.
 \newblock \doi{10.1109/MITS.2010.939925}
 \bibAnnoteFile{TutGraphSLAM}
 
@@ -82,9 +91,9 @@ Grisetti, G., Kummerle, R., Stachniss, C., and Burgard, W. (2010).
 Hoffman, J., Spranger, M., Gohring, D., and Jungel, M. (2005).
 \newblock Making use of what you don't see: negative information in markov
   localization.
-\newblock In \emph{Intelligent Robots and Systems, 2005. (IROS 2005). 2005
-  IEEE/RSJ International Conference on}. 2947--2952.
-\newblock \doi{10.1109/IROS.2005.1545087}
+\newblock In \emph{International Conference on Intelligent Robots and Systems
+  (IROS)}. 2947--2952.
+\newblock \doi{http://dx.doi.org/10.1109/IROS.2005.1545087}
 \bibAnnoteFile{negative_info_markov_localisation}
 
 \bibitem[{Hoffmann et~al.(2006)Hoffmann, Spranger, Gohring, Jungel, and
@@ -93,9 +102,9 @@ Hoffmann, J., Spranger, M., Gohring, D., Jungel, M., and Burkhard, H.-D.
   (2006).
 \newblock Further studies on the use of negative information in mobile robot
   localization.
-\newblock In \emph{Robotics and Automation, 2006. ICRA 2006. Proceedings 2006
-  IEEE International Conference on}. 62--67.
-\newblock \doi{10.1109/ROBOT.2006.1641162}
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)}.
+  62--67.
+\newblock \doi{http://dx.doi.org/10.1109/ROBOT.2006.1641162}
 \bibAnnoteFile{NegInfoFurtherStudies}
 
 \bibitem[{Huang and Gupta(2008)}]{RRT-SLAM}
@@ -104,7 +113,7 @@ Huang, Y. and Gupta, K. (2008).
   robot exploration.
 \newblock In \emph{Intelligent Robots and Systems, 2008. IROS 2008. IEEE/RSJ
   International Conference on}. 1077--1082.
-\newblock \doi{10.1109/IROS.2008.4651183}
+\newblock \doi{http://dx.doi.org/10.1109/IROS.2008.4651183}
 \bibAnnoteFile{RRT-SLAM}
 
 \bibitem[{Kavraki et~al.(1996)Kavraki, Svestka, Latombe, and
@@ -112,30 +121,30 @@ Huang, Y. and Gupta, K. (2008).
 Kavraki, L., Svestka, P., Latombe, J.-C., and Overmars, M. (1996).
 \newblock Probabilistic roadmaps for path planning in high-dimensional
   configuration spaces.
-\newblock \emph{Robotics and Automation, IEEE Transactions on} 12, 566--580.
-\newblock \doi{10.1109/70.508439}
+\newblock \emph{Transactions on Robotics and Automation} 12, 566--580.
+\newblock \doi{http://dx.doi.org/10.1109/70.508439}
 \bibAnnoteFile{PRM_1996}
 
 \bibitem[{Kollar and Roy(2008)}]{Kollar_2008_Exploration_SLAM}
 Kollar, T. and Roy, N. (2008).
 \newblock Efficient optimization of information-theoretic exploration in slam.
-\newblock In \emph{Proceedings of the 23rd National Conference on Artificial
-  Intelligence - Volume 3} (AAAI Press), AAAI'08, 1369--1375
+\newblock In \emph{National Conference on Artificial Intelligence (AAAI)}.
+  vol.~3, 1369--1375
 \bibAnnoteFile{Kollar_2008_Exploration_SLAM}
 
 \bibitem[{Lidoris(2011)}]{GeorgiosLidoris}
 Lidoris, G. (2011).
 \newblock \emph{State Estimation, Planning, and Behavior Selection Under
   Uncertainty for Autonomous Robotic Exploration in Dynamic Environments}
-  (Kassel University: kassel university press GmbH)
+  (kassel university press GmbH)
 \bibAnnoteFile{GeorgiosLidoris}
 
 \bibitem[{Montemerlo and Thrun(2003)}]{DataAssociation2003}
 Montemerlo, M. and Thrun, S. (2003).
 \newblock Simultaneous localization and mapping with unknown data association
   using fastslam.
-\newblock In \emph{Robotics and Automation, 2003. Proceedings. ICRA '03. IEEE
-  International Conference on}. vol.~2, 1985--1991 vol.2.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)}.
+  vol.~2, 1985--1991 vol.2.
 \newblock \doi{10.1109/ROBOT.2003.1241885}
 \bibAnnoteFile{DataAssociation2003}
 
@@ -144,8 +153,8 @@ Montemerlo, M. and Thrun, S. (2003).
 Montemerlo, M., Thrun, S., Koller, D., and Wegbreit, B. (2003).
 \newblock Fastslam 2.0: An improved particle filtering algorithm for
   simultaneous localization and mapping that provably converges.
-\newblock In \emph{In Proc. of the Int. Conf. on Artificial Intelligence
-  (IJCAI}. 1151--1156
+\newblock In \emph{International Conference on Artificial Intelligence
+  (IJCAI)}. 1151--1156
 \bibAnnoteFile{FastSLAM}
 
 \bibitem[{Plagemann et~al.(2007)Plagemann, Kersting, Pfaff, and
@@ -167,9 +176,8 @@ Ross, S., Pineau, J., Paquet, S., and Chaib-draa, B. (2008).
 Shachter, R.~D. (1998).
 \newblock Bayes-ball: Rational pastime (for determining irrelevance and
   requisite information in belief networks and influence diagrams).
-\newblock In \emph{Proceedings of the Fourteenth Conference on Uncertainty in
-  Artificial Intelligence} (San Francisco, CA, USA: Morgan Kaufmann Publishers
-  Inc.), UAI'98, 480--487
+\newblock In \emph{Conference on Uncertainty in Artificial Intelligence (UAI)}.
+  480--487
 \bibAnnoteFile{BayesBall}
 
 \bibitem[{Stachniss et~al.(2005)Stachniss, Grisetti, and
@@ -177,29 +185,29 @@ Shachter, R.~D. (1998).
 Stachniss, C., Grisetti, G., and Burgard, W. (2005).
 \newblock Information gain-based exploration using rao-blackwellized particle
   filters.
-\newblock In \emph{Proc.~of Robotics: Science and Systems (RSS)} (Cambridge,
-  MA, USA)
+\newblock In \emph{Robotics Science and Systems (RSS)}.
+\newblock \doi{10.1.1.134.3647}
 \bibAnnoteFile{stachniss05robotics}
 
 \bibitem[{Thrun(2002)}]{Thrun02particlefilters}
 Thrun, S. (2002).
 \newblock Particle filters in robotics.
-\newblock In \emph{in Proceedings of the 17th Annual Conference on Uncertainty
-  in AI (UAI}
+\newblock In \emph{Annual Conference on Uncertainty in AI (UAI}. vol.~17.
+\newblock \doi{doi=10.1.1.20.567}
 \bibAnnoteFile{Thrun02particlefilters}
 
 \bibitem[{Thrun and B\"{u}(1996)}]{Thrun_grid_based_1996}
 Thrun, S. and B\"{u}, A. (1996).
 \newblock Integrating grid-based and topological maps for mobile robot
   navigation.
-\newblock In \emph{Proceedings of the Thirteenth National Conference on
-  Artificial Intelligence - Volume 2} (AAAI Press), AAAI'96, 944--950
+\newblock In \emph{National Conference on Artificial Intelligence (AAAI)}.
+  vol.~2, 944--950
 \bibAnnoteFile{Thrun_grid_based_1996}
 
 \bibitem[{Thrun et~al.(2005)Thrun, Burgard, and Fox}]{Thrun_Burgard_Fox_2005}
 Thrun, S., Burgard, W., and Fox, D. (2005).
 \newblock \emph{Probabilistic Robotics (Intelligent Robotics and Autonomous
-  Agents)} (Cambridge, MA: The MIT Press)
+  Agents)} (The MIT Press)
 \bibAnnoteFile{Thrun_Burgard_Fox_2005}
 
 \bibitem[{Thrun and Leonard(2008)}]{SLAM_HBR}
@@ -208,14 +216,5 @@ Thrun, S. and Leonard, J.~J. (2008).
 \newblock In \emph{Springer Handbook of Robotics}. 871--889.
 \newblock \doi{http://dx.doi.org/10.1007/978-3-540-30301-5_38}
 \bibAnnoteFile{SLAM_HBR}
-
-\bibitem[{Valencia et~al.(2012)Valencia, Miro, Dissanayake, and
-  Andrade-Cetto}]{ActivePosSLAM}
-Valencia, R., Miro, J., Dissanayake, G., and Andrade-Cetto, J. (2012).
-\newblock Active pose slam.
-\newblock In \emph{Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ
-  International Conference on}. 1885--1891.
-\newblock \doi{10.1109/IROS.2012.6385637}
-\bibAnnoteFile{ActivePosSLAM}
 
 \end{thebibliography}
