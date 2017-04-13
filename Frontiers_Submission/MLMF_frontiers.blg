@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: MLMF_frontiers.aux
 The style file: frontiersinSCNS_ENG_HUMS.bst
@@ -8,45 +8,46 @@ Warning--empty pages in Plagemann07gaussianbeam
 Warning--empty pages in stachniss05robotics
 Warning--empty pages in Thrun02particlefilters
 Warning--missing publisher in SLAM_HBR
-You've used 25 entries,
+Warning--empty booktitle in wan2000
+You've used 37 entries,
             3027 wiz_defined-function locations,
-            785 strings with 10257 characters,
-and the built_in function-call counts, 18422 in all, are:
-= -- 1607
-> -- 813
-< -- 15
-+ -- 389
-- -- 217
-* -- 1263
-:= -- 2578
-add.period$ -- 78
-call.type$ -- 25
-change.case$ -- 227
-chr.to.int$ -- 26
-cite$ -- 54
-duplicate$ -- 1261
-empty$ -- 1369
-format.name$ -- 301
-if$ -- 3922
-int.to.chr$ -- 2
+            875 strings with 12714 characters,
+and the built_in function-call counts, 27527 in all, are:
+= -- 2400
+> -- 1277
+< -- 20
++ -- 618
+- -- 340
+* -- 1916
+:= -- 3868
+add.period$ -- 113
+call.type$ -- 37
+change.case$ -- 334
+chr.to.int$ -- 38
+cite$ -- 79
+duplicate$ -- 1845
+empty$ -- 2000
+format.name$ -- 470
+if$ -- 5829
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 250
-newline$ -- 178
-num.names$ -- 100
-pop$ -- 632
+missing$ -- 374
+newline$ -- 258
+num.names$ -- 148
+pop$ -- 920
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 261
 quote$ -- 0
-skip$ -- 734
+skip$ -- 1084
 stack$ -- 0
-substring$ -- 848
-swap$ -- 628
+substring$ -- 1288
+swap$ -- 928
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 219
-warning$ -- 4
-while$ -- 112
+type$ -- 327
+warning$ -- 5
+while$ -- 166
 width$ -- 0
-write$ -- 392
-(There were 4 warnings)
+write$ -- 575
+(There were 5 warnings)

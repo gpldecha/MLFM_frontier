@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -26,6 +26,15 @@ Bake, C., Tenenbaum, J., and Saxe, R. (2011).
 \newblock Bayesian theory of mind: Modeling joint belief-desire attribution.
 \newblock \emph{Journal of Cognitive Science} \doi{doi=10.1.1.365.1528}
 \bibAnnoteFile{Bake_Saxe_Tene_2011}
+
+\bibitem[{Cadena et~al.(2016)Cadena, Carlone, Carrillo, Latif, Scaramuzza,
+  Neira et~al.}]{Cadena16tro-SLAMfuture}
+Cadena, C., Carlone, L., Carrillo, H., Latif, Y., Scaramuzza, D., Neira, J.,
+  et~al. (2016).
+\newblock Past, present, and future of simultaneous localization and mapping:
+  Towards the robust-perception age.
+\newblock \emph{{IEEE Transactions on Robotics (TRO)}} 32, 1309–1332
+\bibAnnoteFile{Cadena16tro-SLAMfuture}
 
 \bibitem[{Carlone et~al.(2010)Carlone, Du, Ng, Bona, and
   Indri}]{KL_SLAM_exploration_PF}
@@ -63,8 +72,16 @@ de~Chambrier, G. and Billard, A. (2013).
 \newblock \doi{http://dx.doi.org/10.1109/ROBIO.2013.6739521}
 \bibAnnoteFile{deChambrier2013}
 
-\bibitem[{Durrant-Whyte and Bailey(2006)}]{SLAM_part1}
-Durrant-Whyte, H. and Bailey, T. (2006).
+\bibitem[{Durrant-Whyte and Bailey(2006{\natexlab{a}})}]{SLAM_part_I_2006}
+Durrant-Whyte, H. and Bailey, T. (2006{\natexlab{a}}).
+\newblock {Simultaneous Localisation and Mapping (SLAM): Part I The Essential
+  Algorithms}.
+\newblock \emph{Robotics \& Automation Magazine} 13, 99--110.
+\newblock \doi{10.1109/mra.2006.1638022}
+\bibAnnoteFile{SLAM_part_I_2006}
+
+\bibitem[{Durrant-Whyte and Bailey(2006{\natexlab{b}})}]{SLAM_part1}
+Durrant-Whyte, H. and Bailey, T. (2006{\natexlab{b}}).
 \newblock Simultaneous localization and mapping: part i.
 \newblock \emph{Robotics Automation Magazine} 13, 99--110.
 \newblock \doi{10.1109/MRA.2006.1638022}
@@ -86,6 +103,22 @@ Grisetti, G., Kummerle, R., Stachniss, C., and Burgard, W. (2010).
 \newblock \doi{10.1109/MITS.2010.939925}
 \bibAnnoteFile{TutGraphSLAM}
 
+\bibitem[{Hesch et~al.(2014)Hesch, Kottas, Bowman, and Roumeliotis}]{VAIN_2014}
+Hesch, J., Kottas, D., Bowman, S., and Roumeliotis, S. (2014).
+\newblock Consistency analysis and improvement of vision-aided inertial
+  navigation.
+\newblock \emph{Transactions on Robotics (TRO)} 30, 158--176.
+\newblock \doi{10.1109/TRO.2013.2277549}
+\bibAnnoteFile{VAIN_2014}
+
+\bibitem[{Hidalgo and Bräunl(2015)}]{Review_SLAM_2015}
+Hidalgo, F. and Bräunl, T. (2015).
+\newblock Review of underwater slam techniques.
+\newblock In \emph{2015 6th International Conference on Automation, Robotics
+  and Applications (ICARA)}. 306--311.
+\newblock \doi{10.1109/ICARA.2015.7081165}
+\bibAnnoteFile{Review_SLAM_2015}
+
 \bibitem[{Hoffman et~al.(2005)Hoffman, Spranger, Gohring, and
   Jungel}]{negative_info_markov_localisation}
 Hoffman, J., Spranger, M., Gohring, D., and Jungel, M. (2005).
@@ -106,6 +139,14 @@ Hoffmann, J., Spranger, M., Gohring, D., Jungel, M., and Burkhard, H.-D.
   62--67.
 \newblock \doi{http://dx.doi.org/10.1109/ROBOT.2006.1641162}
 \bibAnnoteFile{NegInfoFurtherStudies}
+
+\bibitem[{Huang et~al.(2013)Huang, Mourikis, and Roumeliotis}]{UKF_SLAM_2013}
+Huang, G., Mourikis, A., and Roumeliotis, S. (2013).
+\newblock A quadratic-complexity observability-constrained unscented kalman
+  filter for slam.
+\newblock \emph{IEEE Transactions on Robotics} 29, 1226--1243.
+\newblock \doi{10.1109/TRO.2013.2267991}
+\bibAnnoteFile{UKF_SLAM_2013}
 
 \bibitem[{Huang and Gupta(2008)}]{RRT-SLAM}
 Huang, Y. and Gupta, K. (2008).
@@ -132,12 +173,27 @@ Kollar, T. and Roy, N. (2008).
   vol.~3, 1369--1375
 \bibAnnoteFile{Kollar_2008_Exploration_SLAM}
 
+\bibitem[{Li and Mourikis(2013)}]{High_precision_EKF_2013}
+Li, M. and Mourikis, A.~I. (2013).
+\newblock High-precision, consistent ekf-based visual-inertial odometry.
+\newblock \emph{The International Journal of Robotics Research} 32, 690--711.
+\newblock \doi{10.1177/0278364913481251}
+\bibAnnoteFile{High_precision_EKF_2013}
+
 \bibitem[{Lidoris(2011)}]{GeorgiosLidoris}
 Lidoris, G. (2011).
 \newblock \emph{State Estimation, Planning, and Behavior Selection Under
   Uncertainty for Autonomous Robotic Exploration in Dynamic Environments}
   (kassel university press GmbH)
 \bibAnnoteFile{GeorgiosLidoris}
+
+\bibitem[{Mallios et~al.(2014)Mallios, Ridao, Ribas, and
+  Hern{\'a}ndez}]{Mallios2014}
+Mallios, A., Ridao, P., Ribas, D., and Hern{\'a}ndez, E. (2014).
+\newblock Scan matching slam in underwater environments.
+\newblock \emph{Autonomous Robots} 36, 181--198.
+\newblock \doi{10.1007/s10514-013-9345-0}
+\bibAnnoteFile{Mallios2014}
 
 \bibitem[{Montemerlo and Thrun(2003)}]{DataAssociation2003}
 Montemerlo, M. and Thrun, S. (2003).
@@ -156,6 +212,20 @@ Montemerlo, M., Thrun, S., Koller, D., and Wegbreit, B. (2003).
 \newblock In \emph{International Conference on Artificial Intelligence
   (IJCAI)}. 1151--1156
 \bibAnnoteFile{FastSLAM}
+
+\bibitem[{Mourikis and Roumeliotis(2007)}]{MSCKF_2007}
+Mourikis, A. and Roumeliotis, S. (2007).
+\newblock A multi-state constraint kalman filter for vision-aided inertial
+  navigation.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)}.
+  3565--3572
+\bibAnnoteFile{MSCKF_2007}
+
+\bibitem[{Paull et~al.(2014)Paull, Saeedi, Seto, and Li}]{AUV_2014}
+Paull, L., Saeedi, S., Seto, M., and Li, H. (2014).
+\newblock Auv navigation and localization: A review.
+\newblock \emph{Journal of Oceanic Engineering} 39, 131--149
+\bibAnnoteFile{AUV_2014}
 
 \bibitem[{Plagemann et~al.(2007)Plagemann, Kersting, Pfaff, and
   Burgard}]{Plagemann07gaussianbeam}
@@ -216,5 +286,30 @@ Thrun, S. and Leonard, J.~J. (2008).
 \newblock In \emph{Springer Handbook of Robotics}. 871--889.
 \newblock \doi{http://dx.doi.org/10.1007/978-3-540-30301-5_38}
 \bibAnnoteFile{SLAM_HBR}
+
+\bibitem[{Thrun et~al.(2004)Thrun, Liu, Koller, Ng, Ghahramani, and
+  Durrant-Whyte}]{EIF_2004}
+Thrun, S., Liu, Y., Koller, D., Ng, A., Ghahramani, Z., and Durrant-Whyte, H.
+  (2004).
+\newblock Simultaneous localization and mapping with sparse extended
+  information filters.
+\newblock \emph{International Journal of Robotics Research} 23
+\bibAnnoteFile{EIF_2004}
+
+\bibitem[{Torres-González et~al.(2014)Torres-González, d.~Dios, and
+  Ollero}]{SEIF_2014}
+Torres-González, A., d.~Dios, J. R.~M., and Ollero, A. (2014).
+\newblock Efficient robot-sensor network distributed seif range-only slam.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)}.
+  1319--1326.
+\newblock \doi{10.1109/ICRA.2014.6907023}
+\bibAnnoteFile{SEIF_2014}
+
+\bibitem[{Wan and {Van Der Merwe}(2000)}]{wan2000}
+Wan, E. and {Van Der Merwe}, R. (2000).
+\newblock The unscented kalman filter for nonlinear estimation.
+\newblock 153--158.
+\newblock \doi{10.1109/ASSPCC.2000.882463}
+\bibAnnoteFile{wan2000}
 
 \end{thebibliography}

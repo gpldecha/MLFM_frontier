@@ -90,7 +90,7 @@
 
 %This leads to additional restrictions on current SLAM methodologies for
 %which the parametrisation of the agent’s and object’s joint distribution is a Multivariate Gaussian.
-WORD COUNT: \~11'000\\
+\textbf{WORD COUNT}: 11'000\\
 \begin{abstract}
 
 Simultaneous Localisation and Mapping (SLAM) is concerned with the development of filters to accurately 
@@ -123,25 +123,80 @@ information gain planner. We report on both 1D and 2D experiments.
 \section{Introduction}
 
 % Introduction of SLAM
-Estimating the location or state parameters of a mobile agent whilst simultaneously building a map of the environment has been
-regarded as one of the most important problems to be solved for agents to achieve true autonomy. It is a necessary precondition for 
-any agent to have an estimation of the world at its disposal which accurately encompasses all knowledge and related uncertainties. 
-There has been much research surrounding the field of Simultaneous Localisation And Mapping (SLAM) which branches out into a wide variety of sub-fields 
-dealing with problems from building accurate noise models of the agent sensors \cite{Plagemann07gaussianbeam}, to determining which environmental 
-feature caused a particular measurement, also known as the data association problem \cite{DataAssociation2003} and many more. 
+Estimating the location of a mobile agent whilst simultaneously building a map of the environment has been
+regarded as one of the most important problems to be solved for agents to achieve autonomy. It is a necessary precondition for 
+any agent to have an estimation of the world at its disposal which accurately maintains all acquired knowledge. 
+There has been a vast amount of research surrounding the field of Simultaneous Localisation And Mapping (SLAM) which branches out into a wide variety of sub-fields 
+dealing with problems from building accurate noise models of the agent sensors \cite{Plagemann07gaussianbeam}, to determining 
+which environmental feature caused a particular measurement, also known as the data association problem \cite{DataAssociation2003} 
+and many more. 
 
 % Why does SLAM Work
 
-Although the amount of research might seem overwhelming at first view, all current SLAM methodologies are founded on a single principle; 
-the uncertainty of the map is correlated through the agent's measurements. When an agent localises itself (by reducing position uncertainty)
-all previously landmarks have their uncertainty reduced since the uncertainty is correlated with that of the agent's uncertainty.
+Although the amount of research might seem overwhelming at first, all current SLAM methodologies are founded on a single principle; 
+the uncertainty of the map's features are correlated through successive measurements of agent obtained at different locations \cite{SLAM_part_I_2006}. 
+As the agent localises itself by reducing its position uncertainty, the maps' uncertainty also decreases as the landmarks are 
+correlated. The predominant mathematical formulation of a SLAM problems is to parameterise the joint distribution of the agent's position and maps' features and to recursively 
+integrate applied actions and senses measurements, which is referred as Probabilistic-SLAM \cite{Cadena16tro-SLAMfuture,SLAM_part_I_2006}.
 
+
+%mathematical approach is to recursively filter the joint distribution of the agent and map locations through the successive application 
+%of a motion and measurement model, also known as the system models.
 % The three main pillar of SLAM algorithm and their respective draw backs
 
-There are three main paradigms to solving the SLAM problem. The first is EKF-SLAM (Extendend-Kalman Filter) \cite{SLAM_part1}.
-EKF-SLAM models the full state, being the agent's parameters and environmental features, by a Multivariate Gaussian distribution. 
-The uncertainty of each individual feature is parametrised by a mean (expected position of the feature) and covariance 
-(the level of uncertainty of the position of the feature).
+There are broadley three main paradigms to parameterising the joint distribution and integrating the sensed information:
+
+The first paradigms assumes the joint distribution to be a Multivariate Gaussian distribution and is parameterised by a mean and covariance. The 
+mean is a state vector composed of the agent and map feature positions whilst the elements of the covariance encode the position uncertainty 
+of the state vector. If the motion and measurement system models are linear the Kalman Filter recursion is the best estimator 
+of the joint's parameters. In case the system models are non-linear they can be linearised via a Taylor approximation and in the SLAM context this 
+is known as EKF-SLAM (Extendend-Kalman Filter) \cite{SLAM_part_I_2006} an early popular method.
+
+% The problem with EKF-SLAM : works only with 100 of states has a computational cost which is quadratic [cite]
+
+% UKF : sample based approximation, sigam points, No Jacobian needed during Taylor approximation
+Unscented Kalman Filter\cite{UKF_SLAM_2013}, 
+
+% EIF
+Extended information Filter.
+
+
+
+\cite{VAIN_2014} reviewed the inconsistencies in vision-aided navigation system (VINS) in which data from camera and 
+inertial measurement units are fused to estimate the position and orientation of a sensor. Main source of inconsistency
+is due to the linearisation of the measurement function which falsely reduces the uncertainty in pose estimation which 
+results an increase of the estimation error. The authors introduce a constraint on the Jacobian of both motion and measurement 
+functions which explicitly enforces that no unwanted information is gained. The authors demonstrated their EKF-SLAM with additional 
+constraints on 1.5km outdoor navigation and mapping of the University of Minnesota campus.
+
+% Need to stay that 
+
+
+\cite{High_precision_EKF_2013} multi-state-constraint Kalman filter MSCK F2.0 is a real-time 
+EKF-SLAM for visual-inertial odometry (VIO) sensory information. Linearisation of system models 
+(motion and measurement models) lead to the uncertainty in the state being underestimated. 
+
+MSCK \cite{MSCKF_2007} algorithm outperforms EKF-SLAM methods by a wide margin. As oppose to EKF-SLAM MSCKF maintains 
+a sliding window of poses in its state vector and uses feature measurements to impose constraints on these 
+poses. MSCKF is linear in the number of features. Performs also online camera calibration.
+
+% a review of underwater slam techniques
+
+\cite{Review_SLAM_2015}
+
+FastSLAM: one drawback is that information is lost by during resampling process.
+
+\cite{AUV_2014}
+
+\cite{Mallios2014}
+
+
+% complexiy is quadradit with the number of features [citation]
+% cannot correct erroneous data associations
+% the point of linearization should be adequate.
+
+
+% Need to talk about the latest state of the art for EKF-SLAM.
 
 The second approach is Graph-SLAM \cite{TutGraphSLAM}. Graph-SLAM estimates the full path of the agent and considers every measurement to 
 be a constraint on the agent's path. It is parameterised by the canonical Multivariate Gaussian. At each time step a new row and column 
@@ -153,6 +208,21 @@ certainty all landmarks become independent. It models the distribution of the ag
 has its own copy of the map and updates all landmarks independently which is the strength of this method. 
 However, if many particles are required each must have its own copy of the map. 
 It is beyond the scope of this chapter to provide a detailed review of these  three paradigms and the reader is referred to \cite{Thrun_Burgard_Fox_2005}, \cite{SLAM_HBR}.
+
+% no issue with data associate (solves the full slam problem (full trajectory of the robot) as oppose to the online slam problem.
+
+% represent the probability distribution by a set of particules
+
+% what is the state of the art in SLAM ?
+
+
+
+% A Benchmark for RGB-D Visual Odometry, 3D Reconstruction and SLAM
+%\cite{ORB-SLAM_2015}
+% A Benchmark for RGB-D Visual Odometry, 3D Reconstruction and SLAM
+%\cite{RGBD_BENCHMARK_2014}
+% Online Global Loop Closure Detection for Large-Scale Multi-Session Graph-Based SLAM
+%\cite{Online_loop_closure_2014}
 
 \subsection{Active-SLAM \& Exploration}
 
@@ -207,16 +277,25 @@ at initialisation are known as the agent's prior beliefs.
 \end{figure}
 \vspace*{0.6cm}
 
+
+
 %	2) Current draw back of all SLAM methodologies 
+% \cite{caruso2015_omni_slam}
 As the agent explores the world, it integrates all sensing information at each time step and updates its prior beliefs to posteriors
 (the result of the prior belief after integrating motion and sensory information).
 All current SLAM methods are limited in that they consider only uncertainty induced by sensing inaccuracy inherent in 
-the sensor and motion models. In our setting as the sensory information is strictly haptic, we can confidently assume no measurement noise. 
+the sensor and motion models. The reason for this wide spread limitation is that during theoretical foundation of SLAM, 
+a period which is referred to as the \textit{classic age} (1986-2004)\cite{Cadena16tro-SLAMfuture} (this period gave the three paradigms
+discussed above), the application problems considered the signal noise in range sensor, cameras and odometry measurements.
+The features were always considered to be measurable except when occluded. In our setting as the sensory information is strictly haptic, 
+we can confidently assume no measurement noise. 
+
 In the search task illustrated in Figure \ref{fig:Figure1}, the beliefs and sparse measurement information available to the agent are 
 the source of the uncertainty which is, the absence of positive object measurements. 
 This is known as \textbf{negative information} \cite[p.313]{Thrun_Burgard_Fox_2005} \cite{Thrun02particlefilters,negative_info_markov_localisation}. 
 Thus SLAM methodologies which use the \textbf{Gaussian error} between the predicted and estimated position of features, such as in the case 
-of EKF-SLAM and Graph-SLAM, will not perform well in this setting.  
+of EKF-SLAM and Graph-SLAM, will not perform well in this setting as no measurements of the features positions available until our agent ``bumps''
+into a feature.  
 
 In addition to the negative sensing information, the original beliefs depicted in Figure \ref{fig:Figure1} are \textbf{non-Gaussian}
 and \textbf{multi-modal}. We make \textbf{no assumption} regarding the form of the beliefs. This implies that the joint distribution 
@@ -375,7 +454,7 @@ The probability distribution of the agent's position is given by marginalising t
 The converse holds true for the object's marginal, that is the summation would be over 
 the agents variable. Figure \ref{fig:histogram_joint} (\textit{Top}) illustrates the joint distribution of both the agent and the object random variable. 
 The 1D world of the agent and object is discretised to 10 states, producing a joint distribution with 100 parameters!
-For a state space of $N$ bins, $i=1...N$, and there is a total of $M$ random variables (one agent and $M-1$ objects)
+For a state space of $N$ bins, $s=1...N$, and there is a total of $M$ random variables (one agent and $M-1$ objects)
 and the joint distribution has $N^{M}$ parameters. This exponential increase renders Histogram-SLAM intractable
 with this parameterisation.
 
@@ -463,8 +542,8 @@ parametrised by $\boldsymbol{\theta}^{(ij)}$. Instead we propose a new filter, M
 achieves the same result as the Histogram filter but without having to parameterise the values of the joint distribution, thus avoiding the exponential growth cost. 
 
 The \textbf{key idea} behind the mechanism of the MLMF filter is to evaluate only the joint distribution $P_{\cap}(A_t,O|Y_{0:t},u_{1:t})$ in
-dependent states and updates directly the marginals without marginalising the entire joint state space.
-The MLMF filter parametrises \textbf{explicitly} the marginals ${P(A_t|Y_{0:t},u_{1:t};\ThA)}$, ${P(O|Y_{0:t},u_{1:t};\ThO)}$. 
+dependent states and updates directly to the marginals without parameterising the values of the joint distribution.
+The MLMF filter parametrises \textbf{explicitly} the marginals ${P(A_t|Y_{0:t},u_{1:t};\ThA)}$, ${P(O|Y_{0:t};\ThO)}$. 
 This contrasts the Histogram filter where the marginals are derived from the joint distribution by marginalisation over the entire joint state space. 
 
 \section{Measurement Likelihood Memory Filter}\label{sec:MLMF}
@@ -1299,15 +1378,6 @@ Tables should be inserted at the end of the manuscript. Please build your table 
  
 \bibliographystyle{frontiersinSCNS_ENG_HUMS} % for Science, Engineering and Humanities and Social Sciences articles, for Humanities and Social Sciences articles please include page numbers in the in-text citations
 \bibliography{bib/MLMF.bib}
-
-
-\section*{Figures}
-
-%%% Use this if adding the figures directly in the mansucript, if so, please remember to also upload the files when submitting your article
-%%% There is no need for adding the file termination, as long as you indicate where the file is saved. In the examples below the files (logo1.jpg and logo2.eps) are in the Frontiers LaTeX folder
-%%% If using *.tif files convert them to .jpg or .png
-%%% If using panelled/compiled figures with subcaptions, use the subcaption package as in the second example.  N.B. This package is incompatible with the subfigure and subfig packages
-%%%  NB logo1.jpg is required in the path in order to correctly compile front page header %%%
 
 
 
